@@ -43,6 +43,10 @@ And to get covid-19 statistics  across world just click the world icon present i
 	Google fonts
 [Fonts](https://fonts.google.com/) we can use select the font style for our website and embedd the style in our website to use them. 
 
+##Repl link :
+
+https://emo.geraabhishek.repl.co/
+
 ## Output images :
 
 ![Output1](https://github.com/abhishek-548/project/blob/main/output1.PNG?raw=true)
