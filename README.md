@@ -58,4 +58,4 @@ https://emo.geraabhishek.repl.co/
 
 ## Youtube Link :
 
-[![Youtube Link](https://user-images.githubusercontent.com/72602927/96446734-14ffbf80-122f-11eb-815f-30c5f3112d2c.png)](https://youtu.be/J8eqRwnGrF0)
+[![Youtube Link](https://i2-prod.coventrytelegraph.net/article17913987.ece/ALTERNATES/s1200/0_youtubecoronavirus2JPG.jpg)](https://youtu.be/J8eqRwnGrF0)
