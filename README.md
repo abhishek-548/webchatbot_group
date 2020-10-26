@@ -47,7 +47,6 @@ And to get covid-19 statistics  across world just click the world icon present i
 
 https://emo.geraabhishek.repl.co/
 
-https://emo.geraabhishek.repl.co/
 
 ## Output images :
 
