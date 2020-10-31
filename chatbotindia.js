@@ -1,4 +1,4 @@
-/*js file for chatbot india*/
+//*js file for chatbot india*/
 function send(){
 	var x = document.getElementById("input").value;
 	//uploading user msg to a div 
@@ -8,7 +8,14 @@ function send(){
 	var di = document.getElementsByClassName("r1");
 	di[0].appendChild(p);
 	//uploading the replied msg of bot to div tag
-	if (x=="Get Started"){
+	if(x=="hi"){
+		var pb = document.createElement("p");
+		var res1 = document.createTextNode("Hello this is covidbot");
+		pb.appendChild(res1);
+		var dib = document.getElementsByClassName("r2");
+		dib[0].appendChild(pb);
+	}
+	else if (x=="Get Started"){
 		var pb = document.createElement("p");
 		var res1 = document.createTextNode("Welcome to covid bot");
 		pb.appendChild(res1);
@@ -23,13 +30,13 @@ function send(){
 		dib[0].appendChild(pb);
 		//creating an alert msg
 		alert("This bot can provide covid-19 statistics across states in india and in world.(Ps:- All states or countries should be in upper camel case only)\n"+
-			"1.)Total number of people infected\n"+
-			"2.)Total number of people newly Infected\n"+
-			"3.)Total number of people recovered\n"+
-			"4.)Total number of people newly recovered\n"+
-			"5.)Total number of people died\n"+
+			"infected == Total number of people infected\n"+
+			"new infected == Total number of people newly Infected\n"+
+			"recovered == Total number of people recovered\n"+
+			"new recovered == Total number of people newly recovered\n"+
+			"died == Total number of people died\n"+
 			"To get any type of detail type \n"+
-			"State or Country,number");
+			"State or Country,statistic");
 	}
 	else{
 		var result = x.split(",");
@@ -44,23 +51,23 @@ function send(){
   			var data = JSON.parse(this.response);
   			for(var i=0;i<data.regionData.length;i++){
   				if(data.regionData[i].region==state){
-  					if(info=="1"){
+  					if(info=="infected"){
   						value = data.regionData[i].totalInfected;
   						name = "Infected"
   					}
-  					else if(info=="2"){
+  					else if(info=="new infected"){
   						value = data.regionData[i].newInfected;
   						name = "newly Infected"
   					}
-  					else if(info=="3"){
+  					else if(info=="recovered"){
   						value = data.regionData[i].recovered;
   						name = "recovered"
   					}
-  					else if(info=="4"){
+  					else if(info=="new recovered"){
   						value = data.regionData[i].newRecovered;
   						name = "newly recovered"
   					}
-  					else if(info=="5"){
+  					else if(info=="died"){
   						value = data.regionData[i].deceased;
   						name = "died"
   					}
