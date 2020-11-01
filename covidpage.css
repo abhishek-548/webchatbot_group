@@ -15,7 +15,7 @@ body{
 }
 #aside2{
 	position: fixed;
-	left: 92%;
+	left: 94%;
 	top: 85%;
 }
 .art1{
@@ -101,30 +101,10 @@ body{
 	padding-left: 20px;
 	padding-top: 20px;
 }
-#jc{
-	font-size:30px;
-	text-decoration: none;
-	color:black;
-	padding-left: 20px;
+#iconscont{
+	border-left: 2px solid #03e9f4;
 }
-#jc1{
-	font-size:30px;
-	text-decoration: none;
-	color:black;
-	padding-left: 20px;
-}
-#jc2{
-	font-size:30px;
-	text-decoration: none;
-	color:black;
-	padding-left: 20px;
-}
-#jc3{
-	font-size:30px;
-	text-decoration: none;
-	color:black;
-	padding-left: 20px;
-}
+
 #ig{
 	height: 200px;
 	width: 100%;
