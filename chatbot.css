@@ -49,8 +49,12 @@ body{
 	padding-left: 10px;
 	margin-top: 35px;
 }
-.r::-webkit-scrollbar{
+.r::-webkit-scrollbar{/*chrome,safari,opera */
     display: none;
+}
+.r{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 #bot{
 	position: fixed;
