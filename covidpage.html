@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--twitter-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--google fonts-->
 	<link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
 	<!--mask icon-->
@@ -34,21 +36,36 @@
 	</header>
 	<!--Its a marquee tag to move from right to left-->
 	<p><marquee><span style="color:#03e9f4;font-size: 20px;">Stay Home Stay Safe</span></marquee></p>
-	<!--Contains link to different social media platforms-->
 	<aside id="aside1">
-		<nav style="border-left: 2px solid #03e9f4;">
-			<a href="https://twitter.com/who?lang=en"><i class="fa fa-twitter" id="jc"></i></a><br><br>
-			<a href="https://www.facebook.com/WHO/"><i class="fa fa-facebook-official" id="jc1"></i></a><br><br>
-			<a href="https://www.linkedin.com/company/world-health-organization/"><i class="fa fa-linkedin-square" id="jc2"></i></a><br><br>
-			<a href="mailto:who60@who.int"><i class="fa fa-envelope-o" id="jc3"></i></a><br><br>
+		<nav id="iconscont">
+			<a href="https://twitter.com/who?lang=en" style="color:black;text-decoration: none;">
+				<img src="https://github.com/abhishek-548/webbot/blob/main/twitter.PNG?raw=true" style="height: 25px;width: 25px;padding-left: 20px;padding-right: 20px;">
+			</a>
+			<br/>
+			<br/>
+			<a href="https://www.facebook.com/WHO/">
+				<img src="https://github.com/abhishek-548/webbot/blob/main/fa.PNG?raw=true" style="height: 25px;width: 25px;padding-left: 20px;padding-right: 20px;">
+			</a>
+			<br/>
+			<br/>
+			<a href="https://www.linkedin.com/company/world-health-organization/">
+				<img src="https://github.com/abhishek-548/webbot/blob/main/linke.PNG?raw=true" style="height: 25px;width: 25px;padding-left: 20px;padding-right: 20px;">
+			</a>
+			<br/>
+			<br/>
+			<a href="mailto:who60@who.int">
+				<img src="https://github.com/abhishek-548/webbot/blob/main/mail.PNG?raw=true" style="height: 25px;width: 25px;padding-left: 20px;padding-right: 20px;">
+			</a>
 		</nav>
 	</aside>
-	<!--Contains link to chatbot-->
 	<aside id="aside2">
-		<p style="border-radius: 50%;padding: 10px;background-color:black;border: 2px solid #03e9f4;"><a href="pagetochatbot.html" style="text-decoration: none;color:white;"><i class="fa fa-commenting-o" style="font-size:36px;"></i>
+	<p style="border-radius: 50%;padding: 10px;background-color:black;border: 2px solid #03e9f4;">
+		<a href="pagetochatbot.html" style="text-decoration: none;color:white;">
+			<img src="https://github.com/abhishek-548/webbot/blob/main/chat.PNG?raw=true" style="height: 25px;width: 25px;">
 		</a>
-		</p>
+	</p>
 	</aside>
+
 	<article class="art1">
 		
 	</article>
@@ -147,6 +164,7 @@
 			<p style="font-size: 22px;word-spacing: 1px;">You can know covid-19 statistics across <span style="color:orange;">In</span><span style="color:white;">d</span><span style="color:green;">ia</span><br> and across world</p>
 		</div>
 	</div>
+
 </body>
 <!--java script-->
 <script type="text/javascript">
@@ -166,14 +184,11 @@
       x.style.color="white";
       x.style.backgroundColor="black";
       x.style.borderColor="black"
-      var as = document.getElementById("jc");//acessing remaining div tags to change color
-      var as1 = document.getElementById("jc1");
-      var as2 = document.getElementById("jc2");
-      var as3 = document.getElementById("jc3");
-      as.style.color="white";
-      as1.style.color="white";
-      as2.style.color="white";
-      as3.style.color="white";
+      var line = document.getElementById("iconscont");
+      line.style.borderRightWidth=2+"px";
+      line.style.borderRightStyle="solid";
+      line.style.borderRightColor="#03e9f4";
+      line.style.borderLeftColor="black";
       }
       else{
         var y = document.getElementById("two");//acessing div tag
@@ -187,15 +202,12 @@
         var x = document.getElementById("corona");
         x.style.color="black";
         x.style.backgroundColor="white";
-        x.style.borderColor="white"
-        var as = document.getElementById("jc");//acessing remaining div tags to change color
-        var as1 = document.getElementById("jc1");
-        var as2 = document.getElementById("jc2");
-        var as3 = document.getElementById("jc3");
-        as.style.color="black";
-        as1.style.color="black";
-        as2.style.color="black";
-        as3.style.color="black";
+        x.style.borderColor="white";
+        var line = document.getElementById("iconscont");
+      	line.style.borderLeftWidth=2+"px";
+      	line.style.borderLeftStyle="solid";
+      	line.style.borderLeftColor="#03e9f4";
+      	line.style.borderRightColor="white";
       }
     }
 </script>
